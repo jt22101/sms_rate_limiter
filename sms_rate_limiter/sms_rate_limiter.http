@@ -1,0 +1,6 @@
+@sms_rate_limiter_HostAddress = http://localhost:5277
+
+GET {{sms_rate_limiter_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
