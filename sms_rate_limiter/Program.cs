@@ -1,9 +1,19 @@
+using sms_rate_limiter.Models;
+using sms_rate_limiter.Services;
+using sms_rate_limiter.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// Configure rate limiter settings
+builder.Services.Configure<RateLimitConfig>(
+    builder.Configuration.GetSection("RateLimitConfig"));
+
+// Register rate limiter service as a singleton
+builder.Services.AddSingleton<IRateLimiter, RateLimiterService>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -17,9 +27,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }

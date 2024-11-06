@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sms_rate_limiter", "sms_rate_limiter\sms_rate_limiter.csproj", "{A535A427-8C6F-461D-862E-8C85EA0C4595}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sms_rate_limiter", "sms_rate_limiter\sms_rate_limiter.csproj", "{A535A427-8C6F-461D-862E-8C85EA0C4595}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sms_rate_limiter.Tests", "sms_rate_limiter.Tests\sms_rate_limiter.Tests.csproj", "{711BC319-A384-4B23-A58F-FF4897445F88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44046D40-CD9B-4DF3-9569-FA427B7E8A65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,10 @@ Global
 		{A535A427-8C6F-461D-862E-8C85EA0C4595}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A535A427-8C6F-461D-862E-8C85EA0C4595}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A535A427-8C6F-461D-862E-8C85EA0C4595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711BC319-A384-4B23-A58F-FF4897445F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711BC319-A384-4B23-A58F-FF4897445F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711BC319-A384-4B23-A58F-FF4897445F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711BC319-A384-4B23-A58F-FF4897445F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
